@@ -1,0 +1,41 @@
+<h1>Liste an Fussballspieler</h1>
+<table class="table table-dark">
+  <thead>
+  <th>
+    ID
+  </th>
+  <th>
+    Name
+  </th>
+  <th>
+    Position
+  </th>
+  <th>
+    Alter
+  </th>
+  <th>
+
+  </th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ball of spieler">
+      <td>
+        {{ball.id}}
+      </td>
+      <td>
+        {{ball.name}}
+      </td>
+      <td>
+        {{ball.position}}
+      </td>
+      <td>
+        {{ball.alter}}
+      </td>
+      <td>
+        <button type="button" class="btn btn-danger" (click)="delete(ball)"> Löschen</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
